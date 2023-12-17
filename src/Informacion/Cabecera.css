@@ -1,13 +1,19 @@
 .imagen-cabecera {
-    width: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px; /* Ajusta este valor según cuánto espacio quieras entre la imagen y el footer */
-  }
-  
-  
-  h2 {
-    text-align: center;
-  }
-  
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px; /* Ajusta este valor según cuánto espacio quieras entre la imagen y el footer */
+}
+
+h1, h2, p {
+  line-height: 1.5; /* Ajusta el espacio entre las líneas */
+}
+
+h1, h2 {
+  margin-bottom: 30px; /* Ajusta este valor según cuánto espacio quieras entre los títulos y los párrafos */
+}
+
+h2 {
+  text-align: center;
+}

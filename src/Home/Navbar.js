@@ -36,9 +36,10 @@ function MyNavbar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="#">Perros</Nav.Link>
-            <Nav.Link href="#about">Gatos</Nav.Link>
-            <Nav.Link as={Link} to="/cabecera">Información</Nav.Link> {/* Usa el componente Link para navegar a la página Cabecera */}            <Nav.Link href="#contact">Veterinarias</Nav.Link>
+            <Link to="/perros" className="nav-link">Perros</Link>
+            <Link to="/gatos" className="nav-link">Gatos</Link>
+            <Link to="/cabecera" className="nav-link">Información</Link>
+            <Nav.Link href="#contact">Veterinarias</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         <div className="top-social">
@@ -52,5 +53,5 @@ function MyNavbar() {
       </Container>
     </Navbar>
   );
-  }
+}
 export default MyNavbar;

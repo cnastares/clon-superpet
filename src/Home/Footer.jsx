@@ -9,31 +9,29 @@ function Footer() {
             <div className="container">
                 <div className="row">
                     <div className="footer-col">
-                        <h4>company</h4>
+                        <h4>Acerca de Nosotros</h4>
                         <ul>
-                            <li><a href="#">about us</a></li>
-                            <li><a href="#">our services</a></li>
-                            <li><a href="#">privacy policy</a></li>
-                            <li><a href="#">affiliate program</a></li>
+                            <li><a href="#">Mision y Vision</a></li>
+                            <li><a href="#">Politica de Privacidad</a></li>
+                            <li><a href="#">Legales</a></li>
+                            <li><a href="#">Terminos y condiciones</a></li>
                         </ul>
                     </div>
                     <div className="footer-col">
-                        <h4>get help</h4>
+                        <h4>Obten ayuda</h4>
                         <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">shipping</a></li>
-                            <li><a href="#">returns</a></li>
-                            <li><a href="#">order status</a></li>
-                            <li><a href="#">payment options</a></li>
+                            <li><a href="#">Atención via Whatssapp </a></li>
+                            <li><a href="#">Devoluciones</a></li>
+                            <li><a href="#">Métodos de Pago</a></li>
                         </ul>
                     </div>
                     <div className="footer-col">
                         <h4>online shop</h4>
                         <ul>
-                            <li><a href="#">watch</a></li>
-                            <li><a href="#">bag</a></li>
-                            <li><a href="#">shoes</a></li>
-                            <li><a href="#">dress</a></li>
+                            <li><a href="#">Alimentos para Perros</a></li>
+                            <li><a href="#">Alimentos para Gatos</a></li>
+                            <li><a href="#">Cuidado de tu mascota</a></li>
+                            <li><a href="#">Veterinarias</a></li>
                         </ul>
                     </div>
                     <div className="footer-col">
