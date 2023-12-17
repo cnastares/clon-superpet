@@ -6,8 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSignInAlt, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import logoImage from './Logo.png'; 
 
-
-
 function MyNavbar() {
   useEffect(() => {
     const handleScroll = () => {
@@ -30,9 +28,9 @@ function MyNavbar() {
   return (
     <Navbar id="main-navbar" collapseOnSelect expand="lg" fixed="top">
       <Container>
-      <Navbar.Brand href="#" className="navbar-logo">
-      <img src={logoImage} alt="Logo" className="logo-image" />
-      </Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" className="navbar-logo">
+          <img src={logoImage} alt="Logo" className="logo-image" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
@@ -46,12 +44,17 @@ function MyNavbar() {
           <ul id="top-social-menu">
             <li><a href="#"><i className="fa fa-twitter"></i></a></li>
             <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faSignInAlt} /></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faShoppingCart} /></a></li>
+            <li>
+              <Link to="/login"><FontAwesomeIcon icon={faSignInAlt} /></Link>
+            </li>
+            <li>
+              <Link to="/carro"><FontAwesomeIcon icon={faShoppingCart}/> </Link>
+            </li>
           </ul>
         </div>
       </Container>
     </Navbar>
   );
 }
+
 export default MyNavbar;

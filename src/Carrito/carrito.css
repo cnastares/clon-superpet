@@ -1,81 +1,97 @@
-.carrito-container {
-    font-family: 'Arial', sans-serif;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #e1e1e1;
-    border-radius: 4px;
-    background-color: #f9f9f9;
-  }
-  
-  .producto {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  .producto p {
-    margin: 0;
-  }
-  
-  .cupon {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  
-  .cupon input {
-    flex-grow: 1;
-    padding: 10px;
-    margin-right: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  .cupon button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .cupon button:hover {
-    background-color: #0056b3;
-  }
-  
-  .total {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #fff;
-    border-top: 2px solid #ddd;
-  }
-  
-  .total p {
-    margin: 0;
-    font-weight: bold;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #dc3545;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  button:hover {
-    background-color: #c82333;
-  }
-  
+.carro-container {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px; /* Ajustado para dar más espacio */
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.productos-columna {
+  flex: 3; /* Ocupa 3 partes del espacio disponible */
+  padding-right: 20px; /* Espacio entre columnas */
+}
+
+.checkout-columna {
+  flex: 1; /* Ocupa 1 parte del espacio disponible */
+  padding-left: 20px; /* Espacio entre columnas */
+  border-left: 1px solid #ddd; /* Línea divisora */
+}
+
+
+.producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.imagen-producto {
+  width: 80px; /* Ajusta según tu diseño */
+  height: 80px;
+  object-fit: cover;
+}
+
+.detalle-producto, .cantidad-producto, .total-producto {
+  flex: 1;
+  text-align: center;
+}
+
+.nombre-producto, .precio-producto {
+  display: block;
+}
+
+.cantidad-producto button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.cantidad-producto button:hover {
+  background-color: #0056b3;
+}
+
+.cupon, .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.cupon input {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.total span {
+  font-weight: bold;
+}
+
+/* Estilos adicionales para botones */
+button {
+  padding: 10px 20px;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #c82333;
+}

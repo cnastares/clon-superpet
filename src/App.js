@@ -7,8 +7,11 @@ import Ofertas from './Home/Ofertas.js';
 import Suscripcion from './Home/Suscripcion.js';
 import Footer from './Home/Footer.jsx';
 import Cabecera from './Informacion/Cabecera.js';
-import CabeceraPerro from './Perros_Gatos/CabeceraPerro.js'; // Importa el componente CabeceraPerro
-import CabeceraGato from './Perros_Gatos/CabeceraGato.js'; // Importa el componente CabeceraGato
+import CabeceraPerro from './Perros_Gatos/CabeceraPerro.js';
+import CabeceraGato from './Perros_Gatos/CabeceraGato.js';
+import CabeceraCarro from './Carrito/CabeceraCarro.js';
+import CabeceraLogin from './Login/CabeceraLogin.js';
+//import Login from './Login/Login.js'; // Asegúrate de que este componente y la ruta existan
 
 function App() {
   return (
@@ -18,8 +21,10 @@ function App() {
         <Routes>
           <Route path="/" element={<><Portada /><Carrusel /><Ofertas /><Suscripcion /></>} />
           <Route path="/cabecera" element={<Cabecera />} />
-          <Route path="/perros" element={<CabeceraPerro />} /> {/* Renderiza el componente CabeceraPerro cuando la ruta es '/perros' */}
-          <Route path="/gatos" element={<CabeceraGato />} /> {/* Renderiza el componente CabeceraGato cuando la ruta es '/gatos' */}
+          <Route path="/perros" element={<CabeceraPerro />} />
+          <Route path="/gatos" element={<CabeceraGato />} />
+          <Route path="/login" element={<CabeceraLogin />} /> {/* Asegúrate de que esta ruta corresponda al carrito de compras */}
+          <Route path="/carro" element={<CabeceraCarro />} /> {/* Asegúrate de que esta ruta corresponda al carrito de compras */}
         </Routes>
         <Footer />
       </div>
