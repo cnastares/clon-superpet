@@ -1,0 +1,24 @@
+.ofertas {
+    text-align: center; 
+    margin-top: 100px;
+}
+
+.ofertas h1 {
+    font-weight: bold; 
+}
+
+.ofertas__imagenes {
+    display: flex; 
+    justify-content: center; 
+    gap: 50px; 
+    background-color: red; 
+    padding: 10px; 
+}
+
+.oferta:first-child {
+    margin-left: -10px; 
+}
+
+.oferta {
+    border: 10px solid red; 
+}

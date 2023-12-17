@@ -1,0 +1,13 @@
+.imagen-cabecera {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px; /* Ajusta este valor según cuánto espacio quieras entre la imagen y el footer */
+  }
+  
+  
+  h2 {
+    text-align: center;
+  }
+  

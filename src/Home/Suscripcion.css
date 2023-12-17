@@ -1,0 +1,28 @@
+.suscripcion {
+    display: flex;
+    gap: 90px;
+    margin-top: 90px;
+}
+
+.suscripcion__imagen {
+    width: 30%;
+    height: 25%;
+    margin-right: 20px;
+}
+
+.suscripcion__contenido {
+    text-align: center;
+    margin-left: 200px;
+}
+
+.suscripcion__contenido h1 {
+    margin-bottom: 20px; /* Agrega un margen debajo del título */
+}
+
+.suscripcion__formulario {
+    margin-bottom: 20px; /* Agrega un margen debajo del formulario */
+}
+
+.suscripcion__boton {
+    background-color: #f5f5dc; /* Cambia el color del botón a crema */
+}

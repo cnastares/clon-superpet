@@ -1,0 +1,106 @@
+body {
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.navbar {
+
+  margin-bottom: 0;
+  background-color: #808080; /* Este es un color gris. Ajusta este valor según tus necesidades */
+  transition: all 0.2s ease-out;
+}
+
+
+.navbar .navbar-nav .nav-link {
+  margin-right: 145px; /* Ajusta este valor según tus necesidades */
+}
+
+.navbar .navbar-nav li a {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: blue;
+  transition: all 0.2s ease-out;
+  font-weight: bold; /* Añade esta línea */
+}
+
+
+.navbar-brand {
+  font-size: 25px;
+  transition: all 0.2s ease-out;
+}
+
+.navbar-scroll {
+
+  background-color: #fff; /* Este es un color blanco */
+}
+
+
+@media (min-width: 768px) {
+  .navbar {
+    height: 120px;
+  }
+
+  .navbar-nav>li>a {
+    margin-right: 100px;
+  }
+
+  .navbar-brand {
+    font-size: 28px;
+    padding: 0;
+    height: 120px;
+    line-height: 120px;
+  }
+
+  .navbar-scroll {
+    height: 70px;
+  }
+
+  .navbar-scroll .navbar-brand {
+    height: 70px;
+    line-height: 70px;
+  }
+
+  .navbar-scroll .navbar-nav>li>a {
+    opacity: 1;
+    padding: 0;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav>li>a::after {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #2E1C05;
+    content: '';
+    opacity: 0;
+    transition: height 0.3s, opacity 0.3s, transform 0.3s;
+    transform: translateY(-10px);
+  }
+
+  .navbar-nav>li>a:hover::after,
+  .navbar-nav>li>a:focus::after {
+    height: 2px;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+#top-social-menu li {
+  display: inline-block;
+  margin-right: 10px; /* Ajusta este valor según tus necesidades */
+}
+
+#top-social-menu li a {
+  font-size: 20px; /* Ajusta este valor según tus necesidades */
+}
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 150px; /* Ajusta este valor según tus necesidades */
+  margin-left: -150px; /* Ajusta este valor para mover la imagen hacia la izquierda */
+}
